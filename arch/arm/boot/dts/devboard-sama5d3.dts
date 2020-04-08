@@ -131,7 +131,7 @@
 					compatible = "microchip,mcp23017";
 					gpio-controller;
 					#gpio-cells = <2>;
-					reg = <0x20>
+					reg = <0x20>;
 					
 					interrupt-parent = <&gpio1>;
 					interrupts = <17 IRQ_TYPE_LEVEL_LOW>;
