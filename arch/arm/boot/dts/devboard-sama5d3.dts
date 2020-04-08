@@ -7,7 +7,7 @@
  * Licensed under GPLv2 or later.
  */
 /dts-v1/;
-#include "sama5d36.dtsi"
+#include "devboard-sama5d36.dtsi"
 
 / {
 	model = "ControlAware SAMA5D3";
@@ -125,19 +125,6 @@
 							regulator-always-on;
 						};
 					};
-				};
-
-				gpiom1: gpio@20 {
-					compatible = "microchip,mcp23017";
-					gpio-controller;
-					#gpio-cells = <2>;
-					reg = <0x20>;
-					
-					interrupt-parent = <&gpio1>;
-					interrupts = <17 IRQ_TYPE_LEVEL_LOW>;
-					interrupt-controller;
-					#interrupt-cells=<2>;
-					microchip,irq-mirror;
 				};
 
 			};
