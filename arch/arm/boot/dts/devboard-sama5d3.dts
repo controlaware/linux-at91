@@ -7,7 +7,7 @@
  * Licensed under GPLv2 or later.
  */
 /dts-v1/;
-#include "devboard-sama5d36.dtsi"
+#include "devboard-sama5d3.dtsi"
 
 / {
 	model = "ControlAware SAMA5D3";
