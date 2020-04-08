@@ -126,6 +126,20 @@
 						};
 					};
 				};
+
+				gpiom1: gpio@20 {
+					compatible = "microchip,mcp23017";
+					gpio-controller;
+					#gpio-cells = <2>;
+					reg = <0x20>
+					
+					interrupt-parent = <&gpio1>;
+					interrupts = <17 IRQ_TYPE_LEVEL_LOW>;
+					interrupt-controller;
+					#interrupt-cells=<2>;
+					microchip,irq-mirror;
+				};
+
 			};
 
 			macb0: ethernet@f0028000 {
